@@ -44,7 +44,7 @@ jobs:
         run: npm ci
 
       - name: Run Jest Tests with Coverage
-        run: npm run test:coverage
+        run: npm run test
 
   sonar:
     name: SonarQube Scan
