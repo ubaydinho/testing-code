@@ -76,8 +76,9 @@ jobs:
         # Menggunakan action SonarQube yang direkomendasikan
         uses: SonarSource/sonarqube-scan-action@v5.0.0
         with:
-          # Penting: Tentukan kunci proyek yang benar untuk SonarCloud
+          # Penting: Tentukan kunci proyek dan organisasi yang benar untuk SonarCloud
           projectKey: ubaydinho_testing-code
+          organization: ubaydinho
         env:
           # Pastikan Anda telah menambahkan secrets ini di GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
